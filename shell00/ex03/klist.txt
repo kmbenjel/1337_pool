@@ -1,6 +1,0 @@
-Credentials cache: API:51DFE942-970A-403F-BB6A-A36853C4250B
-        Principal: kbenjell@1337.MA
-
-  Issued                Expires               Principal
-Jun 27 20:21:57 2021  Jun 28 06:21:57 2021  krbtgt/1337.MA@1337.MA
-Jun 27 20:21:59 2021  Jun 28 06:21:57 2021  HTTP/iscsi.1337.ma@1337.MA
