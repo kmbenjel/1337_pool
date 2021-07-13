@@ -2,8 +2,16 @@
 #include <stdio.h>
 int main ()
 {
-	ft_print_combn(3);
-	printf("\n");
+	int n;
+
+	n = 1;
+	while (n < 10)
+	{
+		printf("(ft_print_combn(%d)) - Combinations for n = %d:\n\n", n, n);
+		ft_print_combn(n);
+		printf("\n\n");
+		n++;
+	}	
 	return 0;
 }
 
