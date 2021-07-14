@@ -1,25 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbenjell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/08 21:01:42 by kbenjell          #+#    #+#             */
-/*   Updated: 2021/07/08 21:03:07 by kbenjell         ###   ########.fr       */
+/*   Created: 2021/07/14 17:09:23 by kbenjell          #+#    #+#             */
+/*   Updated: 2021/07/14 17:09:25 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	*ft_strcpy(char	*dest,	char	*src)
-{
-	int	index;
 
-	index = 0;
-	while (src)
-	{
-		dest[index] = src[index];
-		index++;
-		++src;
-	}
-	dest[index] = '\0';
-	return (dest);
-}
+

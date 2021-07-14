@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbenjell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/08 21:01:42 by kbenjell          #+#    #+#             */
-/*   Updated: 2021/07/08 21:03:07 by kbenjell         ###   ########.fr       */
+/*   Created: 2021/07/14 17:09:06 by kbenjell          #+#    #+#             */
+/*   Updated: 2021/07/14 17:09:09 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	*ft_strcpy(char	*dest,	char	*src)
+
+char	*ft_strlcpy(char	*dest, char	*src, unsigned int	size)
 {
 	int	index;
 
 	index = 0;
-	while (src)
+	while (str[index] != '\0')
 	{
-		dest[index] = src[index];
-		index++;
-		++src;
+		dest[index] = str[index];
+		++index;
 	}
-	dest[index] = '\0';
+	while (dst[index] != 0)
+	{
+		dst[index] = '\0';
+	}
 	return (dest);
 }

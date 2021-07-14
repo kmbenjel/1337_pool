@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbenjell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/08 21:01:42 by kbenjell          #+#    #+#             */
-/*   Updated: 2021/07/08 21:03:07 by kbenjell         ###   ########.fr       */
+/*   Created: 2021/07/14 16:43:19 by kbenjell          #+#    #+#             */
+/*   Updated: 2021/07/14 16:43:24 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	*ft_strcpy(char	*dest,	char	*src)
+
+int	ft_str_is_uppercase(char	*str)
 {
 	int	index;
 
 	index = 0;
-	while (src)
+	while (str)
 	{
-		dest[index] = src[index];
-		index++;
-		++src;
+		if (str[index] <= 'Z' && str[index] >= 'A')
+			return (1);
+		++index;
+		++str;
 	}
-	dest[index] = '\0';
-	return (dest);
+	return (0);
 }

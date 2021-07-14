@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbenjell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/08 21:01:42 by kbenjell          #+#    #+#             */
-/*   Updated: 2021/07/08 21:03:07 by kbenjell         ###   ########.fr       */
+/*   Created: 2021/07/14 16:47:51 by kbenjell          #+#    #+#             */
+/*   Updated: 2021/07/14 16:47:53 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	*ft_strcpy(char	*dest,	char	*src)
+
+char	*ft_strupcase(char *str)
 {
 	int	index;
 
 	index = 0;
-	while (src)
+	while (str)
 	{
-		dest[index] = src[index];
-		index++;
-		++src;
+		str[index] -= 32;
+		++index;
+		++str;
 	}
-	dest[index] = '\0';
-	return (dest);
+	return (str);
 }
