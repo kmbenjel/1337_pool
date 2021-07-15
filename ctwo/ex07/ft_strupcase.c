@@ -15,11 +15,11 @@ char	*ft_strupcase(char *str)
 	int	index;
 
 	index = 0;
-	while (str)
+	while (str[index] != 0)
 	{
-		str[index] -= 32;
+		if (!(str[index] > 'z' || str[index] < 'a'))
+			str[index] -= 32;
 		++index;
-		++str;
 	}
 	return (str);
 }

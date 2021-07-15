@@ -15,12 +15,11 @@ int	ft_str_is_printable(char	*str)
 	int	index;
 
 	index = 0;
-	while (str)
+	while (str[index] != 0)
 	{
-		if (str[index] <= 127 && str[index] >= 32)
-			return (1);
+		if (! (str[index] <= 127 && str[index] >= 32))
+			return (0);
 		++index;
-		++str;
 	}
-	return (0);
+	return (1);
 }
