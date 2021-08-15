@@ -20,7 +20,7 @@ char	*ft_strncpy(char	*dest, char	*src, unsigned int	n)
 		dest[index] = src[index];
 		++index;
 	}
-	while (dest[index] != '\0')
+	while (dest[index])
 	{
 		dest[index] = '\0';
 		++index;
