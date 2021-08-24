@@ -22,4 +22,3 @@ char	*ft_strcpy(char	*dest,	char	*src)
 	dest[index] = '\0';
 	return (dest);
 }
-//Yeah it's a comment
