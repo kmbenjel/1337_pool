@@ -3,11 +3,15 @@
 
 int main() 
 {
-	char	*src[20];
-	char	*dest[20];
-	src = "abcd";
-	dest = "xxxxxxxxxxxx";
+	char	src[] = { " khalid "};
+	char	dest[9];
+	char	*pointer;
+
+
+	pointer = ft_strcpy(dest, src);
+	
+
 
 	
-	printf("%s", ft_strcpy(dest, src));
+	printf("%s", *pointer);
 }
