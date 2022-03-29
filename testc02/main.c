@@ -13,5 +13,5 @@ int main()
 
 
 	
-	printf("%s", *pointer);
+	printf("%s", pointer);
 }
