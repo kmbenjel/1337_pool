@@ -3,11 +3,11 @@
 
 int main() 
 {
-	char	*src;
-	char	*dest;
+	char	*src[20];
+	char	*dest[20];
 	src = "abcd";
 	dest = "xxxxxxxxxxxx";
 
 	
-	printf("%s", ft_strcpy(src, dest));
+	printf("%s", ft_strcpy(dest, src));
 }
