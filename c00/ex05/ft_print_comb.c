@@ -9,7 +9,6 @@
 /*   Updated: 2021/07/04 10:56:08 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 #include <unistd.h>
 
 /*	filters out numbersets which are in ascending order and distinct	*/
